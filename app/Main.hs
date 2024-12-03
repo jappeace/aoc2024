@@ -1,7 +1,8 @@
 
 module Main where
 
-import qualified Template
+import qualified Aoc2024.Day1
+
 
 main :: IO ()
-main = Template.main
+main = Aoc2024.Day1.main

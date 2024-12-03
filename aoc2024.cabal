@@ -1,9 +1,9 @@
 cabal-version:      3.0
 
-name:           template
+name:           aoc2024
 version:        1.0.0
-homepage:       https://github.com/jappeace/template#readme
-bug-reports:    https://github.com/jappeace/template/issues
+homepage:       https://github.com/jappeace/aoc2024#readme
+bug-reports:    https://github.com/jappeace/aoc2024/issues
 author:         Jappie Klooster
 maintainer:     hi@jappie.me
 copyright:      2020 Jappie Klooster
@@ -18,7 +18,7 @@ extra-doc-files:
 
 source-repository head
   type: git
-  location: https://github.com/jappeace/template
+  location: https://github.com/jappeace/aoc2024
 
 common common-options
   default-extensions: 
@@ -61,9 +61,9 @@ common common-options
 library
   import: common-options
   exposed-modules:
-      Template
+      Aoc2024.Day1
   other-modules:
-      Paths_template
+      Paths_aoc2024
   hs-source-dirs:
       src
 
@@ -73,7 +73,7 @@ executable exe
   hs-source-dirs:
       app
   build-depends:
-      template
+      aoc2024
   ghc-options: -Wno-unused-packages
 
 test-suite unit
@@ -82,11 +82,11 @@ test-suite unit
   main-is: Test.hs
   ghc-options: -Wno-unused-packages
   other-modules:
-      Paths_template
+      Paths_aoc2024
   hs-source-dirs:
       test
   build-depends:
       tasty,
       tasty-hunit,
       tasty-quickcheck,
-      template
+      aoc2024
