@@ -25,7 +25,7 @@
 --     Finally, the largest number in the left list is 4, while the largest number in the right list is 9; these are a distance 5 apart.
 -- To find the total distance between the left list and the right list, add up the distances between all of the pairs you found. In the example above, this is 2 + 1 + 0 + 1 + 2 + 5, a total distance of 11!
 -- Your actual left and right lists contain many location IDs. What is the total distance between your lists?
-module Aoc2024.Day1
+module Aoc2024.Day1S1
   ( main
   )
 where
