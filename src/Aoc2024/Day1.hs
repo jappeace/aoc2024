@@ -1,4 +1,6 @@
-module Template
+-- |
+
+module Aoc2024.Day1
   ( main
   )
 where
