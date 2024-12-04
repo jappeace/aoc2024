@@ -45,7 +45,7 @@ common common-options
       ImportQualifiedPost
 
   ghc-options:
-    -O2 -Wall -Werror -Wincomplete-uni-patterns
+    -O2 -Wall -Wincomplete-uni-patterns
     -Wincomplete-record-updates -Widentities -Wredundant-constraints
     -Wcpp-undef -fwarn-tabs -Wpartial-fields
     -fdefer-diagnostics -Wunused-packages
@@ -64,6 +64,7 @@ library
   exposed-modules:
       Aoc2024.Day1S1
       Aoc2024.Day1S2
+      Aoc2024.Day2S1
   other-modules:
       Paths_aoc2024
   hs-source-dirs:
@@ -78,3 +79,19 @@ executable exe
       aoc2024
   ghc-options: -Wno-unused-packages
 
+
+
+test-suite unit
+  import: common-options
+  type: exitcode-stdio-1.0
+  main-is: Test.hs
+  ghc-options: -Wno-unused-packages
+  other-modules:
+      Paths_aoc2024
+  hs-source-dirs:
+      test
+  build-depends:
+      tasty,
+      tasty-hunit,
+      tasty-quickcheck,
+      aoc2024
